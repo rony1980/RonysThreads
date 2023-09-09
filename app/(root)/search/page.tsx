@@ -6,7 +6,7 @@ import UserCard from '@/components/cards/UserCard';
 import Pagination from '@/components/shared/Pagination';
 
 import { fetchUser, fetchUsers } from '@/lib/actions/user.action';
-import Searchbar from '@/components/shared/SearchBar';
+import Searchbar from '@/components/shared/Searchbar';
 
 async function Page({
   searchParams,
