@@ -116,14 +116,17 @@ function ThreadCard({
         >
           <p className="text-sutle-medium text-gray-1 flex">
             {formatDateString(createdAt)} -
-            <Image
-              src={community.image}
-              alt="Community Image"
-              width={16}
-              height={16}
-              className="mx-2 rounded-full object-cover"
-            />
-            <span className="text-primary-500">{community.name} Community</span>
+            <span className="relative h-6 w-6">
+              <Image
+                src={community.image}
+                alt="Community Image"
+                fill
+                className="mx-4 rounded-full object-cover"
+              />
+            </span>
+            <span className="ml-6 text-primary-500">
+              {community.name} Community
+            </span>
           </p>
         </Link>
       )}
